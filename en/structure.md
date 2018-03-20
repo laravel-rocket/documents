@@ -86,7 +86,15 @@ Each components have strict responsibility.
 |:--|:--|
 |URLHelper|Provide some functions to handle assets and urls|
 |DateTimeHelper|Provide some functions to handle date & time|
-|DataHelper|Provide some functions to handlle data stored in the system. Such as list of countries , currencies, languages|
+|DataHelper|Provide some functions to handle data stored in the system. Such as list of countries , currencies, languages|
+
+## Building API
+
+* API must be defined by Swagger ( Open API ) file first.
+* We should define Response classes for each API response. Response class and Swagger(OpenAPI Spec) Definition must have one to one relationship.
+* API don't have to represents model( database table ). Need to design to fit on client side demands.
+* We must use "one screen, one API" principle for designing API for mobile client.
+* For mobile client, we should use OAuth 2.0 Authentication. You should use Laravel-Passort to do it.
 
 ## Interface and DI
 

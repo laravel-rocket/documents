@@ -70,6 +70,8 @@
 
 ### Prefix & Postfix
 
+Some data types must follow this rules of prefix/postfix. It is used fof
+
 |column type|prefix|postfix|data type|
 |:--|:--|:--|:--|
 |boolean flags|`is_` or `has_`|-|tinyint|
